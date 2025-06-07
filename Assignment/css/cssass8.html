@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            background-color: rgb(141, 217, 218);
+            align-items: center;
+            justify-content: center;
+        }
+        .button{
+            display: flex;
+            gap: 10px;
+        }
+        button{
+            color: rgb(255, 255, 255);
+            border: none;
+            font-size: 20px;
+            border-radius: 5px;
+            padding: 10px 20px;
+            transition: background-color 0.5s ease,box-shadow 0.5s ease ;
+        }
+        .b1{
+            background-color: blue;
+        }
+        .b1:hover{
+            background-color: aliceblue;
+            color: blue;
+        }
+        .b2{
+            background-color: blueviolet;
+        }
+        .b2:hover{
+            background-color: aliceblue;
+            color:blueviolet;
+        }
+        .b3{
+            background-color: brown;
+        }
+        .b3:hover{
+            background-color: aliceblue;
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div class="button">
+        <button class="b1">Primary</button>
+        <button class="b2">Secondary</button>
+        <button class="b3">Danger</button>
+    </div>
+</body>
+</html>

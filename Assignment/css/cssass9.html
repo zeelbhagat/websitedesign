@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Layout</title>
+  <style>
+    /* Base styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+header, footer {
+  background-color: rgb(0, 0, 0);
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+}
+
+.content-section {
+  background-color: #fff;
+  margin: 10px 0;
+  padding: 20px;
+  border: 1px solid #6f6f6f;
+}
+
+
+
+@media (min-width: 768px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .content-section:nth-child(3) {
+    grid-column: span 2;
+  }
+
+  header, footer {
+    padding: 10px;
+  }
+
+  .content-section {
+    padding: 30px;
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    font-size: 18px;
+  }
+
+  .content-section {
+    padding: 40px;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  footer {
+    font-size: 1rem;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>My Responsive Web Page</h1>
+    </header>
+
+    <main>
+      <section class="content-section">Section 1</section>
+      <section class="content-section">Section 2</section>
+      <section class="content-section">Section 3</section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 My Website</p>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height:10px ;
+        }
+        header,footer{
+            background-color: blue;
+            color: aliceblue;
+            text-align: center;
+            width: 100%;
+            padding: 20px;
+        }
+        main{
+            background-color: black;
+            color: aliceblue;
+            text-align: center;
+            width: 100%;
+            padding: 20px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Header</h1>
+        </header>
+        <main>
+            <h2>Main Content Area </h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ea dignissimos quisquam harum vitae ipsa nihil officia ullam, error ipsam eius illum facilis nostrum dicta dolor? Laborum veniam alias ipsa.</p>
+        </main>
+        <footer>
+            <p> 2025 footer content</p>
+        </footer>
+    </div>
+</body>
+</html>
+
+
