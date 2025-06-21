@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+    <style>
+        body{
+
+            background-color: #f3f6df;
+            display: flex;
+            justify-content: center;
+        }
+
+        .form-container{
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 400px;
+
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-form h2 {
+            text-align: center;
+            margin: 15px;
+            color: #5b6221;
+        }
+        .contact-form label {
+            margin-top: 1rem;
+            margin-bottom: 10px;
+            color: #5b6221;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: #727941;
+            outline: none;
+            background-color:#f3f6df;
+        }
+        .contact-form button {
+            margin-top: 10px;
+            padding: 12px;
+            background-color: #5b6221;
+            color: white;
+            border-radius: 6px;
+            border: none;
+        }
+        .contact-form button:hover {
+            background-color: #979e59;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form action="" method="post" class="contact-form">
+            <h2>Contact Us</h2>
+
+            <label for="">Name:-</label>
+            <input type="text" name="" id="" required>
+
+            <label for="">Email:-</label>
+            <input type="email" name="" id="" required>
+
+            <label for="">Message:-</label>
+            <textarea name="" id="" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

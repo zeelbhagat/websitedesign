@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated Box</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      background-color: #cbcbcb;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      position: relative;
+      animation: moveAndColor 4s linear infinite;
+      box-shadow: 2px 2px 5px gray;
+    }
+
+    @keyframes moveAndColor {
+      0% {
+        left: 0;
+        background-color: red;
+      }
+      50% {
+        left: 80vw;
+        background-color: rgb(51, 255, 0);
+      }
+      100% {
+        left: 0;
+        background-color: rgb(4, 0, 255);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>
+
+

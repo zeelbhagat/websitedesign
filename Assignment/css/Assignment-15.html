@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+
+    body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #e8e8e8;
+    color: #5d2f2f;
+    }
+
+
+    h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    }
+
+
+    .hero {
+    background: #a43131;
+    color: white;
+    text-align: center;
+    padding: 30px 10px;
+    }
+
+    .hero h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+    }
+
+    .hero p {
+    font-size: 20px;
+    }
+
+
+    .features {
+    background: #fff;
+    padding: 50px 10px;
+    text-align: center;
+    }
+
+    .features h2 {
+    font-size: 35px;
+    margin-bottom: 40px;
+    }
+
+    .feature-box {
+    display: inline-block;
+    width: 250px;
+    margin: 20px;
+    padding: 20px;
+    background: #eaeaea;
+    border-radius: 10px;
+    }
+
+    .feature-box i {
+    font-size: 40px;
+    color: #a43131;
+    margin-bottom: 15px;
+    }
+
+    .feature-box h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    }
+
+
+    .contact {
+    background: #f0f0f0;
+    padding: 60px 20px;
+    text-align: center;
+    }
+
+    .contact h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    }
+
+    form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    }
+
+    input, textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    }
+
+    button {
+    padding: 12px;
+    font-size: 18px;
+    background: #a43131;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    }
+
+    button:hover {
+    background: #a43131;
+    }
+
+  </style>
+</head>
+<body>
+
+
+  <section class="hero">
+    <h1>Welcome </h1>
+    <p>Our website</p>
+  </section>
+
+
+  <section class="features">
+    <h2>Our Features</h2>
+    <div class="feature-box">
+      <i class="fas fa-bolt"></i>
+      <h3>Fast Performance</h3>
+      <p>Experience lightning-fast speed with our optimized system.</p>
+    </div>
+    <div class="feature-box">
+      <i class="fas fa-shield-alt"></i>
+      <h3>Secure</h3>
+      <p>Your data is safe with our advanced security protocols.</p>
+    </div>
+    <div class="feature-box">
+      <i class="fas fa-mobile-alt"></i>
+      <h3>Responsive Design</h3>
+      <p>Looks great on all devices: desktop, tablet, and mobile.</p>
+    </div>
+  </section>
+
+
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Submit</button>
+    </form>
+  </section>
+
+</body>
+</html>

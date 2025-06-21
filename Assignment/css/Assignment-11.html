@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pseudo-classes and elements</title>
+    <style>
+      body{
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1, h2 {
+            color: rgb(101, 44, 115);
+        }
+        h1::before, h2::before {
+            content: "~>";
+            color: rgb(129, 69, 172);
+        }
+        p{
+            color: rgb(129, 69, 172);
+            padding-left: 15px;
+        }
+        p::first-line {
+            color: #000000;
+        }
+        a {
+            text-decoration: none;
+            color: rgb(24, 4, 38);
+        }
+        a:hover {
+            color: #ffffff;
+            background-color:  #b488c1;
+        }
+        a:active {
+            color: #fff;
+            background-color: #000000;
+        }
+
+        a:visited {
+            color: #8e44ad;
+        }
+
+        li{
+            list-style-type: none;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Welcome</h1>
+    <h2>Links</h2>
+    <ul >
+        <li><a href="https://www.google.com/">Google</a></li>
+        <li><a href="https://open.spotify.com/">spotify</a></li>
+        <li><a href="https://www.youtube.com/">youtube</a></li>
+    </ul>
+    <h2>Paragraph</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam deserunt quos magni. Quos corrupti ea ipsa
+        dolorum, voluptate, suscipit dignissimos voluptas laborum minus totam doloribus maxime? Distinctio neque ea
+        quod.</p>
+</body>
+</html>

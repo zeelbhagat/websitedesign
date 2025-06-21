@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transforms and transitions</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            background-color: aliceblue;
+        }
+        .title {
+            margin-bottom: 30px;
+            color: #2e6623;
+        }
+        .gallery{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .gallery img{
+            width: 250px;
+            height: 250px;
+            border-radius: 10px;
+            transition: transform 0.4s ,
+                        box-shadow 0.4s ;
+        }
+        .gallery img:hover {
+            transform: scale(1.2) ;
+            box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title">Image Gallery</h1>
+    <div class="gallery">
+        <img src="https://www.jamespictures.co.uk/wp-content/uploads/peak-district/wyming-brook-nature-reserve-256x256.jpg" alt="image 1">
+        <img src="https://d1ccp1bhyyxewc.cloudfront.net/018d5499-0fdb-7efa-94e6-7f7da08e4f59/square/crop/018dec0a-ba70-7646-9242-075c97fbc068/i.jpg" alt="image 2">
+        <img src="https://s.cafebazaar.ir/images/icons/com.NatureLiveWallpaperHQ-9f75d7cb-0358-4bfe-8162-7a19c1719ff9_512x512.png?x-img=v1/resize,h_256,w_256,lossless_false/optimize" alt="image 3">
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Custom Lists Example</title>
+  <style>
+    body{
+        background-color: aliceblue;
+    }
+    ul,ol{
+        list-style-type: none;
+    }
+    .ul li::before {
+        content: "-> ";
+        color: rgb(217, 144, 35);
+    }
+
+    .ol li::before {
+
+        content:  "=>";
+        color: #3b82f6;
+        font-weight: bold;
+    }
+    li {
+        color: #2d1956;
+    }
+
+  </style>
+</head>
+<body>
+  <h2>Unordered List</h2>
+  <ul class="ul">
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Mango</li>
+  </ul>
+
+  <h2>Ordered List</h2>
+  <ol class="ol">
+    <li>Study</li>
+    <li>Eat</li>
+    <li>Sleep</li>
+  </ol>
+</body>
+</html>
